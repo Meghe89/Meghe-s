@@ -168,7 +168,8 @@ h1,h2,h3,h4,h5, p{
         height: 30px;        
         position: absolute;
         top: 40px;
-        right: 30px;
+        right: 30px;       
+        
     }
     .hamburger span{
         background: #fff;
@@ -176,6 +177,20 @@ h1,h2,h3,h4,h5, p{
         width: 100%;
         display: block;
         margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .hamburger.is-active span:nth-child(2){
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .hamburger.is-active span:nth-child(1){
+        transition: all 0.3s ease-in-out;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.is-active span:nth-child(3){
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-8px) rotate(-45deg);
     }
     
 }
