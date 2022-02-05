@@ -223,7 +223,11 @@ p{
     display: inline-block;
     margin: 0 40px 40px 0;
 }
-
+/* FOOTER */
+.footer{
+    background-color: #010e30;
+    padding: 150px 0;
+}
 
 
 /* MEDIA QUERY */
