@@ -43,20 +43,23 @@
 
     <!-- HERO START -->
     <header class="hero">
-        <div class="hero__content">
+        <div class="hero__content reveal">
             <p class="intro-text">Intro text</p>
             <h1 class="big-text">Titolo della mia pagina</h1>
             <a href="" class="button">Discover More</a>
         </div>
+        <video autoplay muted loop id="video-back">
+            <source src="./Img/video-back.mp4" type="video/mp4"> 
+        </video>
     </header>
     <!-- HERO END -->
 
     <!-- POSTER START -->
     <section class="poster mt-3">
-    <div class="poster__img">
+    <div class="poster__img reveal">
         <img src="./Img/bg-video.png" alt="">
     </div>
-    <div class="poster__content">
+    <div class="poster__content reveal">
         <h3 class="big-text">Titolo del mio poster</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, exercitationem sint labore enim excepturi officiis. Id adipisci aut nam labore dolore, harum aspernatur perferendis veniam ut enim reiciendis! Quae, quisquam.</p>
         <a href="#" class="button">Call To Action</a>
@@ -66,10 +69,10 @@
 
     <!-- COVER START -->
     <section class="cover mt-3">
-        <div class="cover__title">
+        <div class="cover__title reveal">
             <h3 class="big-text tw">Titolo del blocco cover</h3>
         </div>
-        <div class="cover__text">
+        <div class="cover__text reveal">
             <h4 class="tw normal-text">Titolo paragrafo</h4>
             <p class="tw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias magnam maxime aliquam unde dolorem hic repudiandae. Dolorum fugit vero rem, cum corporis debitis aperiam eaque tempore accusantium repellendus velit.</p>
             <h4 class="tw normal-text">Titolo paragrafo</h4>
@@ -81,7 +84,7 @@
     <!-- COVER END -->
 
     <!-- GRID START -->
-    <section class="grid mt-3">
+    <section class="grid mt-3 reveal">
         <div class="col">
             <h3 class="big-text">Lorem ipsum</h3>
         </div>
@@ -99,12 +102,32 @@
 
     <!-- Flick start -->
     <section class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>        
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>        
+        <div class="carousel-cell">
+            <div class="carousel-cell__content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content zoom">
+                text
+            </div>
+        </div>
+        
       </section>
     <!-- Flick end -->
 
@@ -112,17 +135,17 @@
     <section class="panel-blue mt-3">
         <div class="grid">
             <div class="col panel-blue__dots">
-                <div class="dot">text</div>
-                <div class="dot">text</div>
-                <div class="dot">text</div>
-                <div class="dot">text</div>
+                <div class="dot zoom">text</div>
+                <div class="dot zoom">text</div>
+                <div class="dot zoom">text</div>
+                <div class="dot zoom">text</div>
             </div>
             <div class="col panel-blue__text">
                 <div class="grid">
-                    <div class="col">
+                    <div class="col reveal">
                         <h3 class="big-text tw">Lorem ipsum.</h3>
                     </div>
-                    <div class="col">
+                    <div class="col reveal">
                         <p class="tw mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, obcaecati, laudantium illum quia rem voluptates odio eaque quod inventore necessitatibus culpa hic optio!</p>
                     </div>
                 </div>
@@ -134,19 +157,19 @@
     <!-- FOOTER SECTION START -->
     <footer class="footer">
         <div class="grid">
-            <div class="col">
+            <div class="col reveal">
                 <h4 class="normal-text tw">Lorem Ipsum</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="col">
+            <div class=" col reveal">
                 <h4 class="normal-text tw">Lorem Ipsum</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="col">
+            <div class=" col reveal">
                 <h4 class="normal-text tw">Lorem Ipsum</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="col">
+            <div class=" col reveal">
                 <h4 class="normal-text tw">Lorem Ipsum</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
@@ -159,6 +182,9 @@
 
     <!-- FLICKITY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js" integrity="sha512-+m9auGg9ZwnDc37W8RSsLhzKBLVOYsf5BKzSpYrYhQQk6hItXOhBFKHuHbMCpoABCUO6l4HVK+dFwxMIME3E7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="./script.js"></script>
